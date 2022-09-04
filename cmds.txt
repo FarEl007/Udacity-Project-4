@@ -1,0 +1,55 @@
+    1  cd project-ml-microservice-kubernetes
+    2  bash resize.sh 100
+    3  df -h
+    4  clear
+    5  make setup
+    6   source ~/.devops/bin/activate
+    7  make install
+    8  make lint
+    9  clear
+   10  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+   11  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+   12  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+   13  sudo chmod +x ./kubectl
+   14  sudo mv ./kubectl /usr/local/bin/kubectl
+   15  docker version
+   16  kubectl version
+   17  kubectl version --output=yaml
+   18  make lint
+   19  ./run_docker.sh
+   20  bash run_docker.sh
+   21  ./run_docker.sh
+   22  bash run_docker.sh
+   23  bash upload_docker.sh
+   24  minikube start
+   25  bash run_kubernetes.sh
+   26  mkdir .circleci
+   27  touch .circleci/config.yml
+   28  mkdir .circleci
+   29  git init
+   30  git add .
+   31  git init
+   32  git commit -m "Project 4 Submission"
+   33  git branch -M main
+   34  git remote add origin https://github.com/FarEl007/Udacity-Project-4.git
+   35  git push -u origin main
+   36  git remote add origin https://github.com/FarEl007/Udacity-Project-4.git
+   37  git push -u origin main
+   38  git status
+   39  git config --global user.name "FarEl007"
+   40  git config --global user.email tomiwaadesiyan@gmail.com
+   41  git push -u origin main
+   42  git remote remove origin
+   43  git status
+   44  git branch -M main
+   45  git remote add origin https://github.com/FarEl007/Udacity-Project-4.git
+   46  git commit -m "Project 4 Submission
+
+   47  git branch -M main
+   48  git remote add origin https://github.com/FarEl007/Udacity-Project-4.git
+   49  git commit -m "Project 4 Submission"
+   50  git push -u origin main
+   51  git add .
+   52  git commit -m "Added CircleCI Badge"
+   53  git push
+   54  history > cmds.txt
